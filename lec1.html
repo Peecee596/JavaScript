@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Local and Global Variable</title>
+</head>
+<body>
+Hi, I am Global and Local Variable of JavaScript.
+
+<button onClick="glo()">Global Variable</button>
+<button onClick ="loc()">Local Variable</button>
+<button onClick ="access()">Access Local as Global Variable</button>
+
+<script>
+//Global
+var first_name="Poonam"
+
+function glo(){
+	document.write(`Printing a Global Variable Value: ${first_name}`);
+	document.write(`Printing a Local Variable: ${second_name}`);//Not printing and error in console
+}
+function loc(){
+	var second_name="Chauhan"
+	document.write(`Printing a Local Variable: ${second_name}`);
+	window.value=100;
+}
+function access(){
+	document.write(`Printing Local as Global variable:${window.value}`);		
+}
+</script>
+</body>
+</html>
