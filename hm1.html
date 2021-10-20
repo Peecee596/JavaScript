@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>HM1-OnClick Operators</title>
+</head>
+<body>
+<button onClick="add()">Add</button>
+<button onClick="sub()">Sub</button>
+<button onclick="multiply()">Multiply</button>
+<button onClick="modulus()">Modulus</button>
+<button onClick="divide()">Divide</button>
+<button onClick="increment()">Increment</button>
+<button onClick="decrement()">Decrement</button>
+<script>
+var num1=60;
+var num2=20;
+function add(){
+	var num3=num1+num2;
+	document.write(`Addition of ${num1} and ${num2} is :${num3}`);
+}
+function sub(){
+	var num3=num1-num2;
+	document.write(`Subtraction of ${num1} and ${num2} is :${num3}`);
+}
+function multiply(){
+	var num3=num1*num2;
+	document.write(`Multiplication of ${num1} and ${num2} is:${num3} `);
+}
+function modulus(){
+	var num3=num1/num2;
+	document.write(`Modulus of ${num1} and ${num2} is :${num3}`);
+}
+function divide(){
+	var num3=num1%num2;
+	document.write(`Division of ${num1} and ${num2} is:${num3}`);
+}
+function increment(){
+	num3=num1++;
+	num4=num2++;
+	document.write(`Increment value of ${num1} and ${num2} is ${num3}& ${num4}`)
+}
+function decrement(){
+	num3=num1--;
+	num4=num2--;
+	document.write(`Decrement value of ${num1} and ${num2} is ${num3} & ${num4}`)
+}
+
+</script>
+</body>
+</html>
