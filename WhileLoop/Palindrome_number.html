@@ -1,0 +1,26 @@
+<html>
+<head></head>
+<body>
+<script>
+n=1101;
+rev=0;
+a=n;
+while(n!=0){
+r=n%10;
+rev=rev*10+r;
+n=Math.floor(n/10)
+}
+document.write("Original Number is"+a+"<br/>");
+document.write("Reverse Number is"+rev+"<br/>");
+
+if(rev==a){
+document.write("Its a Palindrome Number");
+}
+else{
+document.write("Its Not a Palindrome Number");
+}
+</script>
+</body>
+
+
+</html>
