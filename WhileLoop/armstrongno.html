@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+<script>
+var n=153;
+var n1=n;
+var n2=n;
+var count=0;
+var arm=0;
+//calculating no of digits
+while(n!=0){
+count++;
+n=Math.floor(n/10);
+}
+//breaking up into single digits and summing up to raising the power
+while(n2!=0){
+r=n2%10;
+var arm= arm+Math.pow(r,count);
+n2=Math.floor(n2/10);
+}
+if(arm==n1){
+document.write("Its an Armstrong no");
+}
+else{
+document.write("Its not an Armstrong no");
+}
+</script>
+</body>
+</html>
