@@ -1,0 +1,30 @@
+<html>
+<script>
+let num=2;
+count=0;
+if(num==1)
+{
+document.write("1 is neither an Prime Nor Composite No")
+}
+else{
+for(i=2;i<num;i++)
+{
+if(num%i==0)
+{
+count++;
+break;
+}
+}
+
+if(count!==0)
+{
+document.write(`${num} is Not an Prime No`)
+}
+else
+{
+document.write(`${num} is an Prime No`)
+}
+
+}
+</script>
+</html>
